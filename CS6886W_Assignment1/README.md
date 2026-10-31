@@ -11,36 +11,42 @@ Train a VGG6-style CNN on CIFAR-10 and study the effect of activation function, 
 ## Repository structure
 
 ```text
-.
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── train.py
-├── model.py
-├── data.py
-├── engine.py
-├── optimizers.py
-├── augmentations.py
-├── activations/
-│   ├── __init__.py
-│   ├── relu.py
-│   ├── sigmoid.py
-│   ├── tanh.py
-│   ├── silu.py
-│   └── gelu.py
-├── checkpoints/
-│   ├── README.md
-│   └── best_model.pth
-├── plots/
-│   ├── 01_parallel_coordinates.png
-│   ├── 02_validation_accuracy_scatter.png
-│   ├── 03_training_accuracy.png
-│   ├── 04_training_loss.png
-│   ├── 05_validation_accuracy.png
-│   └── 06_validation_loss.png
-└── results/
-    ├── results_summary.csv
-    └── wandb_runs.csv
+CS6886W_Assignment1/
+└── CS6886W_Assignment1/
+    ├── README.md
+    ├── requirements.txt
+    ├── .gitignore
+    ├── train.py
+    ├── model.py
+    ├── data.py
+    ├── engine.py
+    ├── optimizers.py
+    ├── augmentations.py
+    ├── collect_results.py
+    │
+    ├── activations/
+    │   ├── __init__.py
+    │   ├── relu.py
+    │   ├── sigmoid.py
+    │   ├── tanh.py
+    │   ├── silu.py
+    │   └── gelu.py
+    │
+    ├── checkpoints/
+    │   ├── README.md
+    │   └── best_model.pth
+    │
+    ├── plots/
+    │   ├── 01_parallel_coordinates.png
+    │   ├── 02_validation_accuracy_scatter.png
+    │   ├── 03_training_accuracy.png
+    │   ├── 04_training_loss.png
+    │   ├── 05_validation_accuracy.png
+    │   └── 06_validation_loss.png
+    │
+    └── results/
+        ├── results_summary.csv
+        └── wandb_runs.csv
 ```
 
 ## Model
@@ -86,7 +92,7 @@ The experiments were executed in CUDA-enabled Google Colab and Kaggle environmen
 
 ```bash
 git clone https://github.com/ee24m521-Tanuja/CS6886W_Assignment1.git
-cd CS6886W_Assignment1
+cd CS6886W_Assignment1/CS6886W_Assignment1
 
 python3 -m venv .venv
 source .venv/bin/activate
